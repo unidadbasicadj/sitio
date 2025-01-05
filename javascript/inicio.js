@@ -1,4 +1,4 @@
-// Calcula la distancia de la imagen desde el costado indicado ("left" o "right")
+// **** Función que calcula la distancia de la imagen desde el costado indicado ("left" o "right") ****
 function marginDistance(side, imgElement) {
   const rect = imgElement.getBoundingClientRect();
 
@@ -11,7 +11,7 @@ function marginDistance(side, imgElement) {
   return 0;
 }
 
-// Actualiza la opacidad de cada imagen en base a la distancia de la foto con cada costado de la pantalla
+// **** Función que actualiza la opacidad de cada imagen en base a la distancia de la foto con cada costado de la pantalla ****
 function updateOpacity() {
   // Selecciona todas las imágenes con los IDs fotito-1, fotito-2, fotito-3, fotito-4
   const images = document.querySelectorAll('[id^="fotito-"]'); // Selecciona todos los elementos que empiecen con "fotito-"
@@ -46,4 +46,17 @@ function updateOpacity() {
 
 // Comienza el bucle
 requestAnimationFrame(updateOpacity);
+
+// **** Función para recargar la página que evita el error del widget the Instagram en el host ****
+window.onload = function () {
+  // Chequea si ya fue recargada
+  if (!sessionStorage.getItem('hasReloaded')) {
+    // Establece la bandera en el almacenamiento de sesión de ser así y recarga la página luego de un segundo (1000 ms)
+    sessionStorage.setItem('hasReloaded', 'true');
+    setTimeout(function () {
+      window.location.reload();
+    }, 1000);
+  }
+};
+
 
