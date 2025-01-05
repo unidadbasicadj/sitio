@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -27,6 +27,7 @@
     </header>
 
     <main>
+        
         <!-- ////////////////////////////// Slide de fotos ////////////////////////////// -->
         <section class="photo-slide">
             <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -65,9 +66,9 @@
             <!-- Bootstrap JS and dependencies (via CDN) -->
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
         </section>
 
+        <!-- ////////////////////////////// La sección de íconos de redes socales y del correo ////////////////////////////// -->
         <section id="redes">
             <ul class="redes-sociales">
                 <li class="facebook"><a href="https://www.facebook.com/unidadbasicadj" target="_blank"><img
@@ -81,6 +82,7 @@
             </ul>
         </section>
 
+        <!-- ////////////////////////////// El dedo índice y la dirección de correo ////////////////////////////// -->
         <section id="correo">
             <!--<p class="correo-titulo">NUESTRO CORREO</p>-->
             <img class="emoji-apuntando" src="./arte/emoji.png" alt="emoji con dedo índice apuntando hacia abajo">
@@ -222,47 +224,9 @@
                     </p>
                 </div>
             </blockquote>
-
-            <!--
-            <div class="fb-page" data-href="https://www.facebook.com/unidadbasicadj" data-tabs="timeline" data-width=""
-                data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                data-show-facepile="false">
-                <blockquote cite="https://www.facebook.com/unidadbasicadj" class="fb-xfbml-parse-ignore"><a
-                        href="https://www.facebook.com/unidadbasicadj">Unidad Básica Doctrina Justicialista</a>
-                </blockquote>
-            </div>
-
-            <div id="x-page" class="twitter-timeline"></div>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-            <script>
-                window.onload = function () {
-                    if (typeof twttr !== "undefined") {
-                        twttr.ready(function (twttr) {
-                            twttr.widgets.createTimeline(
-                                {
-                                    sourceType: "profile",
-                                    screenName: "unidadbasicadj",
-                                    via: 'unidadbasicadj',
-                                    lang: 'es',
-                                    limit: 5,
-                                    width: '100'
-                                },
-                                document.getElementById("x-page")
-                            ).then(function (el) {
-                                console.log("Widget de twitter/x cargado con éxito.");
-                            }).catch(function (error) {
-                                console.error("Error al cargar el widget de twitter:", error);
-                            });
-                        });
-                    } else {
-                        console.error("El widget de Twitter no cargó");
-                    }
-                };
-            </script>
-            -->
         </section>
 
+        <!-- ////////////////////////////// Mapa de San Justo ////////////////////////////// -->
         <section id="mapa">
             <h1>Mapa de San Justo, provincia de Buenos Aires, Argentina</h1>
             <div id="mapa-frame">
@@ -275,11 +239,14 @@
 
     </main>
 
+    <!-- ////////////////////////////// Pie de la página ////////////////////////////// -->
     <footer>
         <p class="geolocalizacion-pie">San Justo, municipio de La Matanza, República Argentina. Todos los derechos
             reservados.</p>
-        <footer>
-            <script async defer src="./javascript/inicio.js"></script>
+    </footer>
+
+    <!-- ////////////////////////////// JS mío ////////////////////////////// -->
+    <script async defer src="./javascript/inicio.js"></script>
 </body>
 
 </html>
