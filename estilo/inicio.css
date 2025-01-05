@@ -5,7 +5,12 @@
 
 @font-face {
     font-family: "Gotham Bold";
-    src: url('../fuentes/general/g-bold.otf') format('truetype');
+    src: url('../fuentes/general/g-bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Gotham Ultra";
+    src: url('../fuentes/general/g-ultra.otf') format('opentype');
 }
 
 @keyframes cicloDeSombra {
@@ -76,10 +81,11 @@ header {
     align-items: center;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+
 }
 
 .encabezado-general img {
-    max-width: 80vw;
+    max-width: 70vw;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -155,7 +161,7 @@ header {
     justify-content: center;
     text-decoration: none;
     margin-top: 0rem;
-
+    font-size: 3vw;
 }
 
 /*
@@ -286,10 +292,70 @@ footer {
     margin-bottom: -20rem;
 }
 
+/*
+.photo-slide {
+    max-width: 90vw;
+}*/
+
+
+.photo-slide {
+    margin-top: 6rem;
+}
+
+.carousel-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    /*
+    position: absolute;
+    top: 50%;
+    
+    z-index: 5;
+    width: 5%;
+    */
+    margin: -1rem;
+    font-size: 135%;
+    font-family: "Gotham Ultra";
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+    transform: scale(2);
+}
+
+.carousel-control-next {
+    transform: translateX(-50%);
+}
+
+.carousel-control-prev {
+    transform: translateX(50%);
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.d-block {
+    width: 60vw;
+}
+
+@media (max-width: 648px) {
+    .redes-sociales {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width: 768px) {
 
     header,
-    .redes-sociales,
     .encabezado-general,
     #redes-widgets {
         flex-direction: column;
@@ -315,6 +381,10 @@ footer {
         margin: 1rem;
         margin-top: 1.25rem !important;
     }
+
+    .correo-e {
+        font-size: 8.5vw;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1390px) {
@@ -329,7 +399,6 @@ footer {
         margin-right: 0;
     }
 
-
     .fb-post,
     .twitter-tweet,
     .instagram-media {
@@ -339,6 +408,10 @@ footer {
     .twitter-tweet {
         margin: 1rem;
         margin-top: 1.25rem !important;
+    }
+
+    .correo-e {
+        font-size: 6vw;
     }
 
 }
