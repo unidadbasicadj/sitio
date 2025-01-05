@@ -192,19 +192,25 @@ header {
 }
 */
 
-.correo-e {
+.correo-e,
+.correo-titulo {
+    text-align: center;
     justify-content: center;
-    display: inline-block;
-    word-wrap: break-word;
+    justify-content: center;
     text-decoration: none;
     margin-top: 0rem;
     animation: cicloDeTamanio 500ms infinite;
 }
 
-.correo-titulo {
-    margin-bottom: 0;
+.correo-e {
+    display: inline-block;
+    word-wrap: break-word;
 }
 
+.correo-titulo {
+    display: flex;
+    margin-bottom: 0;
+}
 
 a {
     text-decoration: none;
@@ -230,7 +236,7 @@ footer {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
-    margin-top: 6.5rem;
+    margin-top: 12.5rem;
     flex-direction: column;
     text-align: center;
     max-width: 95vw;
