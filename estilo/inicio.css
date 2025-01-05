@@ -250,6 +250,7 @@ a {
 
 .fb-post {
     background-color: rgba(255, 255, 255, 1);
+    max-width:fit-content;
 }
 
 .fb-post,
@@ -330,9 +331,23 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1390px) {
+
     #redes-widgets {
         flex-direction: column;
         align-items: center;
+    }
+
+    .redes-sociales {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .logo-escudo {
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        margin-top: 0rem;
     }
 
     .fb-post,
