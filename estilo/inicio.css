@@ -118,7 +118,8 @@ header {
 .redes-sociales img {
     height: 8rem;
     max-height: 15vh;
-    margin-left: 1rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
     margin-top: 1.25rem;
     padding: 0;
     filter: drop-shadow(0 0 .15rem rgba(25, 25, 25, .65));
@@ -314,6 +315,7 @@ footer {
 
     .redes-sociales {
         margin-left: 0;
+        margin-right: 0;
     }
 
     .logo-escudo {
