@@ -152,12 +152,22 @@ header {
     max-width: 90vw;
 }
 
+/*
 .correo-e {
     animation: cicloDeTamanio 500ms infinite;
     max-width: 90vw;
     justify-content: center;
-    text-align: center;
     margin-top: 0rem;
+}
+*/
+
+.correo-e {
+    justify-content: center;
+    display: inline-block;
+     word-wrap: break-word;
+    text-decoration: none;
+    margin-top: 0rem;
+    animation: cicloDeTamanio 500ms infinite;
 }
 
 .correo-titulo {
