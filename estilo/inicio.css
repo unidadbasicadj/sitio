@@ -250,6 +250,11 @@ a {
 
 .fb-post {
     background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: fit-content
 }
 
 .fb-post,
@@ -305,14 +310,6 @@ footer {
         align-items: center;
     }
 
-    .twitter-tweet {
-        margin: 1rem;
-    }
-
-    .fb-post {
-        max-width: 90vw;
-    }
-
     .redes-sociales {
         margin-left: 0;
         margin-right: 0;
@@ -326,12 +323,31 @@ footer {
         margin-top: 0rem;
     }
 
+    .fb-post,
+    .twitter-tweet,
+    .instagram-media {
+        margin: 0rem;
+    }
+
+    .twitter-tweet {
+        margin: 1rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1390px) {
     #redes-widgets {
         flex-direction: column;
         align-items: center;
+    }
+
+    .fb-post,
+    .twitter-tweet,
+    .instagram-media {
+        margin: 0rem;
+    }
+
+    .twitter-tweet {
+        margin: 1rem;
     }
 
 }
