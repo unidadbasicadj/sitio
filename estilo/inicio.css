@@ -199,12 +199,13 @@ header {
     justify-content: center;
     text-decoration: none;
     margin-top: 0rem;
-    animation: cicloDeTamanio 500ms infinite;
+
 }
 
 .correo-e {
     display: inline-block;
     word-wrap: break-word;
+    animation: cicloDeTamanio 500ms infinite;
 }
 
 .correo-titulo {
