@@ -201,8 +201,18 @@ header {
 
 }
 
+/*
 .correo-e {
     display: inline-block;
+    word-wrap: break-word;
+    animation: cicloDeTamanio 500ms infinite;
+    text-wrap-mode: wrap;
+}
+*/
+
+.correo-e {
+    display: inline-block;
+    overflow-wrap: break-word;
     word-wrap: break-word;
     animation: cicloDeTamanio 500ms infinite;
 }
