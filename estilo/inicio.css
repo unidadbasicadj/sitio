@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Gotham Bold";
-    src: url('../fuentes/logo/g-bold.otf') format('truetype');
+    src: url('../fuentes/general/g-bold.otf') format('truetype');
 }
 
 @keyframes cicloDeSombra {
