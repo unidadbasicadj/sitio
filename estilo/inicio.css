@@ -232,6 +232,8 @@ a {
     flex-direction: row;
     margin-top: 10rem;
 }
+
+/*
 #x-page {
     width: 21rem;
 }
@@ -241,23 +243,45 @@ a {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 3rem;
+
+
+*/
+
+.fb-post {
+    background-color: rgba(255, 255, 255, 1);
 }
 
-iframe {
+.fb-post,
+.twitter-tweet,
+.instagram-media {
+    margin: 1rem;
+}
+
+.instagram-media {
+    margin-top: .65rem !important;
+}
+
+.twitter-tweet {
+    margin-right: 2rem;
+}
+
+#mapa-frame {
     filter: drop-shadow(0 0 .30rem rgba(25, 25, 25, 1));
+
 }
 
-iframe:hover {
+#mapa-frame:hover {
     animation: cicloDeSombra 1s infinite;
 }
 
+/*
 iframe {
     display: flex;
     text-align: center;
     justify-content: center;
-    max-width: 90vw;
+    align-items: flex-start;
 }
-
+*/
 footer {
     font-family: "Gotham Bold";
     font-size: 1.5rem;
@@ -280,11 +304,19 @@ footer {
         align-items: center;
     }
 
+    .twitter-tweet {
+        margin: 1rem;
+    }
+
+    .fb-post {
+        max-width: 90vw;
+    }
+
     .redes-sociales {
         margin-left: 0;
     }
 
-       .logo-escudo {
+    .logo-escudo {
         margin-bottom: 1rem;
     }
 
