@@ -241,6 +241,38 @@ a {
     animation: cicloRebote .75s infinite;
 }
 
+
+#mapa {
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Gotham Bold";
+}
+
+#mapa-frame {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    filter: drop-shadow(0 0 .30rem rgba(25, 25, 25, 1));
+}
+
+iframe:hover {
+    animation: cicloDeSombra 1s infinite;
+}
+
+iframe {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 90vw;
+}
+
 footer {
     font-family: "Gotham Bold";
     font-size: 1.5rem;
