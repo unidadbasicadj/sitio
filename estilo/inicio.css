@@ -100,7 +100,6 @@ header {
 
 .encabezado-general {
     max-width: 90vw;
-    /*height: 6rem;*/
     background-color: rgba(255, 255, 255, 1);
     border: .15rem outset rgba(25, 25, 25, .85);
     margin: .5rem;
@@ -130,49 +129,23 @@ header {
     animation: cicloDeSombra 1s infinite;
 }
 
-#x-page {
-    width: 100%;
-    margin: 0 1rem;
-    height: 10rem;
-    width: 25rem;
-}
-
+/*
 #redes-widgets {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin-top: 12rem;
 }
-
-@media (max-width: 768px) {
-
-    header,
-    .redes-sociales,
-    .encabezado-general {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .redes-sociales {
-        margin-left: 0;
-    }
-
-    #x-page {
-        margin-top: 1rem;
-    }
-
-    footer {
-        display: none;
-    }
-
-    .logo-escudo {
-        margin-bottom: 1rem;
-    }
-
-    footer {
-        margin-top: 0rem;
-    }
+*/
+/*
+#redes-widgets {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
 
 }
+*/
 
 #correo {
     display: flex;
@@ -252,6 +225,24 @@ a {
     justify-content: center;
 }
 
+#redes-widgets {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 10rem;
+}
+#x-page {
+    width: 21rem;
+}
+
+.fb-page,
+#x-page {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+
 iframe {
     filter: drop-shadow(0 0 .30rem rgba(25, 25, 25, 1));
 }
@@ -277,4 +268,32 @@ footer {
     text-align: center;
     max-width: 95vw;
     margin-bottom: -20rem;
+}
+
+@media (max-width: 768px) {
+
+    header,
+    .redes-sociales,
+    .encabezado-general,
+    #redes-widgets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociales {
+        margin-left: 0;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .logo-escudo {
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        margin-top: 0rem;
+    }
+
 }
