@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Platform Regular";
+    src: url('../fuentes/logo/p-regular.ttf') format('truetype');
+}
+
+@keyframes cicloDeSombra {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0));
+        text-shadow: 0 0 10px rgba(0, 0, 255, 0);
+        color: rgba(0, 0, 0, 1);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 5px rgba(0, 0, 255, 1));
+        text-shadow: 0 0 10px rgba(0, 0, 255, 1);
+        color: rgba(0, 0, 85, 1);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0));
+        text-shadow: 0 0 10px rgba(0, 0, 255, 0);
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+body {
+    background-image: url('../arte/textura_fondo.jpeg');
+    background-repeat: repeat;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.encabezado-general img {
+    max-width: 80vw;
+    justify-content: center;
+}
+
+.encabezado-general {
+    text-align: center;
+    margin: 1rem;
+}
+
+.logo-escudo {
+    height: 8rem;
+}
+
+.encabezado-general,
+.logo-escudo {
+    max-width: 90vw;
+    height: 6rem;
+    border-radius: 0rem;
+    background-color: rgba(255, 255, 255, 1);
+    border: .15rem outset rgba(25, 25, 25, .85);
+    margin: .5rem;
+    padding: 1.25rem;
+    margin-bottom: 3.5rem;
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales img {
+    height: 2rem;
+    max-height: 15vh;
+    margin-left: 1rem;
+    margin-top: 1.25rem;
+    padding: 0;
+    filter: drop-shadow(0 0 .15rem rgba(25, 25, 25, .65));
+}
+
+.redes-sociales img:hover {
+    animation: cicloDeSombra 1s infinite;
+}
+
+#x-page {
+    width: 100%;
+    margin: 0 1rem;
+    height: 10rem;
+    width: 25rem;
+}
+
+#redes-widgets {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+
+    header,
+    #redes-widgets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-escudo {
+        margin-bottom: 1rem;
+    }
+
+    #x-page {
+        margin-top: 1rem;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+
+footer {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Platform Regular";
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.correo-e:hover {
+    animation: cicloDeSombra 1s infinite;
+}
