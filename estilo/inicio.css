@@ -28,7 +28,7 @@
     }
 }
 
-@keyframes cicloDeTamanio {
+@keyframes cicloDeEscala {
     0% {
         transform: scale(100%);
     }
@@ -123,7 +123,7 @@ header {
     margin-top: 1.25rem;
     padding: 0;
     filter: drop-shadow(0 0 .15rem rgba(25, 25, 25, .65));
-    animation: cicloDeTamanio 500ms infinite;
+    animation: cicloDeEscala 500ms infinite;
 }
 
 .redes-sociales img:hover {
@@ -150,6 +150,10 @@ header {
     .encabezado-general {
         flex-direction: column;
         align-items: center;
+    }
+
+    .redes-sociales {
+        margin-left: 0;
     }
 
     #x-page {
@@ -182,15 +186,6 @@ header {
     max-width: 90vw;
 }
 
-/*
-.correo-e {
-    animation: cicloDeTamanio 500ms infinite;
-    max-width: 90vw;
-    justify-content: center;
-    margin-top: 0rem;
-}
-*/
-
 .correo-e,
 .correo-titulo {
     text-align: center;
@@ -205,7 +200,7 @@ header {
 .correo-e {
     display: inline-block;
     word-wrap: break-word;
-    animation: cicloDeTamanio 500ms infinite;
+    animation: cicloDeEscala 500ms infinite;
     text-wrap-mode: wrap;
 }
 */
@@ -214,7 +209,7 @@ header {
     display: inline-block;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    animation: cicloDeTamanio 500ms infinite;
+    animation: cicloDeEscala 500ms infinite;
 }
 
 .correo-titulo {
@@ -240,7 +235,6 @@ a {
     text-align: center;
     animation: cicloRebote .75s infinite;
 }
-
 
 #mapa {
     padding: 1rem;
