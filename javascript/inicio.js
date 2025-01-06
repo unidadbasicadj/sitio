@@ -44,34 +44,17 @@ function updateOpacity() {
   requestAnimationFrame(updateOpacity);
 }
 
-// Comienza el bucle
+// Comienza el bucle para actualizar la opacidad de las imágenes del slide
 requestAnimationFrame(updateOpacity);
-
-// **** Función para recargar la página que evita el error del widget the Instagram en el host ****
-/*
-window.onload = function () {
-  // Chequea si ya fue recargada
-  if (!sessionStorage.getItem('hasReloaded')) {
-    // Establece la bandera en el almacenamiento de sesión de ser así y recarga la página luego de un segundo (1000 ms)
-    sessionStorage.setItem('hasReloaded', 'true');
-    setTimeout(function () {
-      window.location.reload();
-    }, 1000);
-  }
-};
-*/
-
 
 // **** Función para recargar la página que evita el error del widget de Instagram en el host ****
 // Chequea si ya fue recargada
-
-if (!sessionStorage.getItem('reloaded') && !/Android/i.test(navigator.userAgent)) {
+if (!sessionStorage.getItem('reloaded')) {
   // Esteblece el temporizador de la recarga
   setTimeout(function () {
     // Estblece el valor bandera en el almacenamiento de sesión
     sessionStorage.setItem('reloaded', 'true');
     // Recarga la págona
     location.reload();
-  }, 2000); // 3000 ms = 3 segundos
+  }, 2000);
 }
-
