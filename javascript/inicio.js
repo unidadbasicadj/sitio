@@ -48,6 +48,7 @@ function updateOpacity() {
 requestAnimationFrame(updateOpacity);
 
 // **** Función para recargar la página que evita el error del widget the Instagram en el host ****
+/*
 window.onload = function () {
   // Chequea si ya fue recargada
   if (!sessionStorage.getItem('hasReloaded')) {
@@ -58,5 +59,16 @@ window.onload = function () {
     }, 1000);
   }
 };
+*/
 
-
+// **** Función para recargar la página que evita el error del widget de Instagram en el host ****
+// Chequea si ya fue recargada
+if (!sessionStorage.getItem('reloaded')) {
+  // Esteblece el temporizador de la recarga
+  setTimeout(function () {
+    // Estblece el valor bandera en el almacenamiento de sesión
+    sessionStorage.setItem('reloaded', 'true');
+    // Recarga la págona
+    location.reload();
+  }, 3000); // 3000 ms = 3 segundos
+}
