@@ -222,6 +222,8 @@ a {
     flex-direction: column;
     text-align: center;
     font-family: "Gotham Bold";
+    font-size: 2.5rem;
+    line-height: 1.1;
 }
 
 #mapa-frame {
@@ -299,6 +301,7 @@ footer {
     text-align: center;
     margin-bottom: -20rem;
     margin-top: 6rem;
+    line-height: 1.1;
 }
 
 /*
@@ -365,10 +368,25 @@ footer {
     margin-right: 1rem;
 }
 
+#banderas img {
+    max-height: 15vh;
+    margin: 2rem;
+    margin-top: .5rem;
+    filter: drop-shadow(0 0 .35rem rgba(25, 25, 25, .65));
+}
+
 @media (max-width: 648px) {
     .redes-sociales {
         flex-direction: column;
         align-items: center;
+    }
+
+    #banderas img {
+        margin: .5rem;
+    }
+
+    #mapa-frame {
+        margin-top: 1rem;
     }
 }
 
@@ -403,6 +421,14 @@ footer {
 
     .correo-e {
         font-size: 8.5vw;
+    }
+
+    #banderas img {
+        margin: .5rem;
+    }
+
+    #mapa-frame {
+        margin-top: 1rem;
     }
 }
 
