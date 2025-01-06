@@ -61,6 +61,7 @@ window.onload = function () {
 };
 */
 
+
 // **** Función para recargar la página que evita el error del widget de Instagram en el host ****
 // Chequea si ya fue recargada
 if (!sessionStorage.getItem('reloaded')) {
