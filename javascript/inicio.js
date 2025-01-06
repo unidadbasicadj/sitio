@@ -63,6 +63,7 @@ window.onload = function () {
 
 
 // **** Función para recargar la página que evita el error del widget de Instagram en el host ****
+/*
 // Chequea si ya fue recargada
 if (!sessionStorage.getItem('reloaded')) {
   // Esteblece el temporizador de la recarga
@@ -73,3 +74,4 @@ if (!sessionStorage.getItem('reloaded')) {
     location.reload();
   }, 3000); // 3000 ms = 3 segundos
 }
+*/
