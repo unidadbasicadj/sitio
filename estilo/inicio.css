@@ -20,21 +20,21 @@
 
 @keyframes cicloDeSombra {
     0% {
-        filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0));
-        text-shadow: 0 0 10px rgba(0, 0, 255, 0);
-        color: rgba(0, 0, 0, 1);
+        filter: drop-shadow(0 0 10px rgba(0, 124, 182, 0));
+        text-shadow: 0 0 20px rgba(0, 124, 182, 0);
+        /*color: rgba(33, 37, 41, 1);*/
     }
 
     50% {
-        filter: drop-shadow(0 0 5px rgba(0, 0, 255, 1));
-        text-shadow: 0 0 10px rgba(0, 0, 255, 1);
-        color: rgba(0, 0, 85, 1);
+        filter: drop-shadow(0 0 10px rgba(0, 124, 182, 1));
+        text-shadow: 0 0 20px rgba(0, 124, 182, 1);
+        /*color: rgba(0, 61, 89, 1);*/
     }
 
     100% {
-        filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0));
-        text-shadow: 0 0 10px rgba(0, 0, 255, 0);
-        color: rgba(0, 0, 0, 1);
+        filter: drop-shadow(0 0 10px rgba(0, 124, 182, 0));
+        text-shadow: 0 0 20px rgba(0, 124, 182, 0);
+        /*color: rgba(33, 37, 41, 1);*/
     }
 }
 
@@ -159,7 +159,7 @@ header {
     margin-top: 6rem;
     margin-bottom: 6rem;
     max-width: 90vw;
-     line-height: 1.1;
+    line-height: 1.1;
 }
 
 .correo-e,
@@ -337,6 +337,11 @@ footer {
 .carousel-control-prev-icon {
     filter: invert(1);
     transform: scale(2);
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+    transform: scale(2.25);
 }
 
 .carousel-control-next {
