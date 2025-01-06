@@ -13,6 +13,11 @@
     src: url('../fuentes/general/g-ultra.otf') format('opentype');
 }
 
+@font-face {
+    font-family: "Gotham Book";
+    src: url('../fuentes/general/g-book.otf') format('opentype');
+}
+
 @keyframes cicloDeSombra {
     0% {
         filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0));
@@ -117,6 +122,7 @@ header {
 .redes-sociales {
     list-style-type: none;
     padding: 0;
+    margin-bottom: 6rem;
     display: flex;
     justify-content: center;
 }
@@ -150,9 +156,10 @@ header {
     font-family: "Gotham Bold";
     font-size: 3.5rem;
     margin: 4rem;
-    margin-top: 0;
+    margin-top: 6rem;
     margin-bottom: 6rem;
     max-width: 90vw;
+     line-height: 1.1;
 }
 
 .correo-e,
@@ -198,6 +205,7 @@ a {
 .emoji-apuntando {
     display: block;
     margin: 0 auto;
+    margin-bottom: 1.25rem;
     width: 4.5rem;
     text-align: center;
     justify-content: center;
@@ -283,7 +291,7 @@ iframe {
 */
 
 footer {
-    font-family: "Gotham Bold";
+    font-family: "Gotham Book";
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -345,6 +353,11 @@ footer {
 
 .d-block {
     width: 60vw;
+}
+
+.geolocalizacion-pie {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 @media (max-width: 648px) {

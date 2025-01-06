@@ -1,1 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100"><path fill="#D35400" fill-rule="evenodd" d="M96.015 38.988H4.006c-1.104 0-2 .897-2 2.005v57.001c0 1.108.896 2.006 2 2.006h92.009a2.003 2.003 0 0 0 2.001-2.006V40.993a2.003 2.003 0 0 0-2.001-2.005" clip-rule="evenodd"/><path fill="#ECF0F1" fill-rule="evenodd" d="M5 15.974v82.004C5 99.095 5.896 100 7 100h86.001A2.01 2.01 0 0 0 95 97.979V1.99a2.01 2.01 0 0 0-1.999-2.021l-71.997.008z" clip-rule="evenodd"/><path d="m40 72l54.997-33L95 45.98L51.028 72z" opacity=".1"/><path fill="#F39C12" fill-rule="evenodd" d="M2 97.991c0 1.11.895 2.009 2 2.009h92c1.104 0 2-.899 2-2.009V42L50 71L2 42z" clip-rule="evenodd"/><path fill="#F1C40F" fill-rule="evenodd" d="m5 15.974l16.001.01V0z" clip-rule="evenodd"/><path fill="#F1C40F" d="m2 42l.052 54L50 71z"/><path fill="#E57E22" d="M98 42L50 71l48 25z"/><path fill-rule="evenodd" d="M98 97.991V96L50 71l47.328 28.482c.409-.367.672-.896.672-1.491m-96 0V96l48-25L2.672 99.482A2 2 0 0 1 2 97.991" clip-rule="evenodd" opacity=".3"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="correo.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.4453125"
+     inkscape:cx="63.767273"
+     inkscape:cy="59.655758"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     fill="#D35400"
+     fill-rule="evenodd"
+     d="M96.015 38.988H4.006c-1.104 0-2 .897-2 2.005v57.001c0 1.108.896 2.006 2 2.006h92.009a2.003 2.003 0 0 0 2.001-2.006V40.993a2.003 2.003 0 0 0-2.001-2.005"
+     clip-rule="evenodd"
+     id="path1" />
+  <path
+     fill="#ECF0F1"
+     fill-rule="evenodd"
+     d="M5 15.974v82.004C5 99.095 5.896 100 7 100h86.001A2.01 2.01 0 0 0 95 97.979V1.99a2.01 2.01 0 0 0-1.999-2.021l-71.997.008z"
+     clip-rule="evenodd"
+     id="path2" />
+  <path
+     d="m40 72l54.997-33L95 45.98L51.028 72z"
+     opacity=".1"
+     id="path3" />
+  <path
+     fill="#F39C12"
+     fill-rule="evenodd"
+     d="M2 97.991c0 1.11.895 2.009 2 2.009h92c1.104 0 2-.899 2-2.009V42L50 71L2 42z"
+     clip-rule="evenodd"
+     id="path4" />
+  <path
+     fill="#F1C40F"
+     fill-rule="evenodd"
+     d="m5 15.974l16.001.01V0z"
+     clip-rule="evenodd"
+     id="path5" />
+  <path
+     fill="#F1C40F"
+     d="m2 42l.052 54L50 71z"
+     id="path6" />
+  <path
+     fill="#E57E22"
+     d="M98 42L50 71l48 25z"
+     id="path7" />
+  <path
+     fill-rule="evenodd"
+     d="M98 97.991V96L50 71l47.328 28.482c.409-.367.672-.896.672-1.491m-96 0V96l48-25L2.672 99.482A2 2 0 0 1 2 97.991"
+     clip-rule="evenodd"
+     opacity=".3"
+     id="path8" />
+  <g
+     id="g1"
+     transform="matrix(0.81654936,0,0,0.81654936,9.6076025,7.0932145)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:0;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#d5d8d9;fill-opacity:1;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0.8;paint-order:stroke markers fill"
+       x="49.450684"
+       y="41.333332"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';fill:#d5d8d9;fill-opacity:1;stroke-width:0"
+         x="49.450684"
+         y="41.333332">@</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;line-height:0;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#694308;fill-opacity:1;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0;stroke-linecap:square;stroke-miterlimit:0.8;paint-order:stroke markers fill"
+       x="48.385052"
+       y="39.960079"
+       id="text8-3"><tspan
+         sodipodi:role="line"
+         id="tspan8-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';fill:#694308;fill-opacity:1;stroke-width:0"
+         x="48.385052"
+         y="39.960079">@</tspan></text>
+  </g>
+</svg>
