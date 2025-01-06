@@ -245,6 +245,7 @@ a {
 
 .fb-post {
     background-color: rgba(255, 255, 255, 1);
+    max-width: fit-content;
 }
 
 .fb-post,
