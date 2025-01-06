@@ -64,7 +64,8 @@ window.onload = function () {
 
 // **** Función para recargar la página que evita el error del widget de Instagram en el host ****
 // Chequea si ya fue recargada
-if (!sessionStorage.getItem('reloaded') && !/Android/i.test(navigator.userAgent)) {
+/*
+if(!sessionStorage.getItem('reloaded') && !/Android/i.test(navigator.userAgent)) {
   // Esteblece el temporizador de la recarga
   setTimeout(function () {
     // Estblece el valor bandera en el almacenamiento de sesión
@@ -73,4 +74,4 @@ if (!sessionStorage.getItem('reloaded') && !/Android/i.test(navigator.userAgent)
     location.reload();
   }, 3000); // 3000 ms = 3 segundos
 }
-
+*/
