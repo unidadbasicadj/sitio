@@ -58,3 +58,39 @@ if (!sessionStorage.getItem('reloaded')) {
     location.reload();
   }, 2000);
 }
+
+// **** Función para verificar si abre de la aplicación en el celu  el facebook ****
+function openFacebook() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  if (/android/i.test(userAgent)) {
+    window.location.href = "fb://page/unidadbasicadj"; // Aplicación de facebook
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.location.href = "fb://profile/unidadbasicadj"; // Aplicación de facebook
+  } else {
+    window.open("https://www.facebook.com/unidadbasicadj", "_blank"); // Navegador
+  }
+}
+
+// **** Función para verificar si abre de la aplicación en el celu el Instagram ****
+function openInstagram() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  if (/android/i.test(userAgent)) {
+    window.location.href = "instagram://user?username=unidadbasicadj"; // Aplicación de Instagram
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.location.href = "instagram://user?username=unidadbasicadj"; // Aplicación de Instagram
+  } else {
+    window.open("https://www.instagram.com/unidadbasicadj", "_blank"); // Navegador
+  }
+}
+
+// **** Función para verificar si abre de la aplicación en el celu el Twitter ****
+function openX() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  if (/android/i.test(userAgent)) {
+    window.location.href = "twitter://user?screen_name=unidadbasicadj"; // Aplicación de X
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    window.location.href = "twitter://user?screen_name=unidadbasicadj"; // Aplicación de X
+  } else {
+    window.open("https://www.x.com/unidadbasicadj", "_blank"); // Navegador
+  }
+}
