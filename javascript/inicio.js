@@ -94,3 +94,18 @@ function openX() {
     window.open("https://www.x.com/unidadbasicadj", "_blank"); // Navegador
   }
 }
+
+// Detecta si clickea en el widget de Facebook
+document.querySelectorAll('.fb-post').forEach(function (post) {
+  post.addEventListener('click', openFacebook);
+});
+
+// Detecta si clickea en el widget de Instagram
+document.querySelectorAll('.instagram-media').forEach(function (post) {
+  post.addEventListener('click', openInstagram);
+});
+
+// Detecta si clickea en el widget de X/Twitter
+document.querySelectorAll('.twitter-tweet').forEach(function (post) {
+  post.addEventListener('click', openX);
+});
