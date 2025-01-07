@@ -53,7 +53,6 @@
 }
 
 @keyframes cicloRebote {
-
     0%,
     20%,
     50%,
@@ -64,12 +63,12 @@
 
     40% {
         transform: translateY(-10px);
-        /* Move up */
+        /* Va hacia arriba */
     }
 
     60% {
         transform: translateY(-5px);
-        /* Move down slightly */
+        /* Va apenas hacia abajo */
     }
 }
 
@@ -87,7 +86,6 @@ header {
     margin-top: 1.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-
 }
 
 .encabezado-general img {

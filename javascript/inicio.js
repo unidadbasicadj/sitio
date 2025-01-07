@@ -2,11 +2,11 @@
 function marginDistance(side, imgElement) {
   const rect = imgElement.getBoundingClientRect();
 
-  // Chequea que margen está calculando ("left" o "right")
+  // Chequea qué margen está calculando ("left" o "right")
   if (side === 'left') {
-    return rect.left; // Distancia del costado izquierdo
+    return rect.left; // Distancia del costado izquierdo ("left")
   } else if (side === 'right') {
-    return window.innerWidth - rect.right; // Distancia del costado derecho
+    return window.innerWidth - rect.right; // Distancia del costado derecho ("right")
   }
   return 0;
 }
@@ -47,19 +47,19 @@ function updateOpacity() {
 // Comienza el bucle para actualizar la opacidad de las imágenes del slide
 requestAnimationFrame(updateOpacity);
 
-// **** Función para recargar la página que evita el error del widget de Instagram en el host ****
+// **** Función para recargar la página una sola vez por sesión para evitar el error de carga del widget de Instagram en el host ****
 // Chequea si ya fue recargada
 if (!sessionStorage.getItem('reloaded')) {
   // Esteblece el temporizador de la recarga
   setTimeout(function () {
-    // Estblece el valor bandera en el almacenamiento de sesión
+    // Establece el valor bandera en el almacenamiento de sesión para evitar que recargue otra vez en la misma sesión
     sessionStorage.setItem('reloaded', 'true');
-    // Recarga la págona
+    // Recarga la página
     location.reload();
   }, 2000);
 }
 
-// **** Función para verificar si abre de la aplicación en el celu  el facebook ****
+// **** Función para verificar si abre la aplicación en el celu de facebook ****
 function openFacebook() {
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
   if (/android/i.test(userAgent)) {
@@ -71,7 +71,7 @@ function openFacebook() {
   }
 }
 
-// **** Función para verificar si abre de la aplicación en el celu el Instagram ****
+// **** Función para verificar si abre la aplicación en el celu de Instagram ****
 function openInstagram() {
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
   if (/android/i.test(userAgent)) {
@@ -83,7 +83,7 @@ function openInstagram() {
   }
 }
 
-// **** Función para verificar si abre de la aplicación en el celu el Twitter ****
+// **** Función para verificar si abre la aplicación en el celu de Twitter ****
 function openX() {
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
   if (/android/i.test(userAgent)) {
