@@ -97,7 +97,6 @@ function openX() {
   }
 }
 
-/*
 // Detecta si clickea en el widget de Facebook
 document.querySelectorAll('.fb-post').forEach(function (post) {
   post.addEventListener('click', openFacebook);
@@ -112,19 +111,3 @@ document.querySelectorAll('.instagram-media').forEach(function (post) {
 document.querySelectorAll('.twitter-tweet').forEach(function (post) {
   post.addEventListener('click', openX);
 });
-*/
-/*
-// Attempt to fetch from a bad Instagram endpoint (incorrect URL)
-function triggerError() {
-  fetch('https://graph.instagram.com/logging_client_events_invalid', { method: 'POST' })
-    .then(response => {
-      console.log('Request was successful:', response);
-    })
-    .catch(error => {
-      console.error('Error occurred:', error); // This will log the connection refusal error
-    });
-}
-
-// Call the function when the page loads
-window.onload = triggerError;
-*/
