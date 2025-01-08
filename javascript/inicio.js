@@ -95,6 +95,7 @@ function openX() {
   }
 }
 
+/*
 // Detecta si clickea en el widget de Facebook
 document.querySelectorAll('.fb-post').forEach(function (post) {
   post.addEventListener('click', openFacebook);
@@ -109,3 +110,4 @@ document.querySelectorAll('.instagram-media').forEach(function (post) {
 document.querySelectorAll('.twitter-tweet').forEach(function (post) {
   post.addEventListener('click', openX);
 });
+*/
