@@ -19,6 +19,7 @@
 }
 
 @keyframes cicloDeSombra {
+
     0% {
         filter: drop-shadow(0 0 10px rgba(0, 124, 182, 0));
         text-shadow: 0 0 20px rgba(0, 124, 182, 0);
@@ -36,9 +37,11 @@
         text-shadow: 0 0 20px rgba(0, 124, 182, 0);
         /*color: rgba(33, 37, 41, 1);*/
     }
+
 }
 
 @keyframes cicloDeEscala {
+
     0% {
         transform: scale(100%);
     }
@@ -71,6 +74,7 @@
         transform: translateY(-5px);
         /* Va apenas hacia abajo */
     }
+
 }
 
 body {
@@ -265,6 +269,10 @@ a {
     margin: 1rem;
 }
 
+.fb-post {
+    margin-top: .6rem;
+}
+
 .instagram-media {
     margin-top: .65rem !important;
 }
@@ -413,7 +421,7 @@ footer {
         margin: 0rem;
     }
 
-    .twitter-tweet {
+    .twitter-tweet .instagram-media {
         margin: 1rem;
         margin-top: 1.25rem !important;
     }
@@ -449,7 +457,7 @@ footer {
         margin: 0rem;
     }
 
-    .twitter-tweet {
+    .twitter-tweet .instagram-media {
         margin: 1rem;
         margin-top: 1.25rem !important;
     }
