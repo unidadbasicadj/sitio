@@ -53,6 +53,7 @@
 }
 
 @keyframes cicloRebote {
+
     0%,
     20%,
     50%,
@@ -303,12 +304,12 @@ footer {
 }
 
 /* 
-.photo-slide {
+#photo-slide {
     max-width: 90vw;
 }*/
 
 
-.photo-slide {
+#photo-slide {
     margin-top: 6rem;
 }
 
