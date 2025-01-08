@@ -272,19 +272,25 @@ a {
 
 .fb-post {
     margin-top: .6rem;
-    margin-left: 0;
-    margin-right: 0;
 }
+
+
 
 .instagram-media {
     margin-top: .7rem !important;
+    margin-right: 2rem !important;
+    margin-left: 2rem !important;
+    min-width: max-content !important;
+    min-height: 46.5rem;
 }
 
+
+/*
 .twitter-tweet {
     margin-right: 2rem;
     margin-left: 2rem;
 }
-
+*/
 
 #mapa-frame {
     filter: drop-shadow(0 0 .30rem rgba(25, 25, 25, 1));
@@ -417,8 +423,15 @@ footer {
         margin-top: 1rem;
     }
 
+    .fb-post,
+    .twitter-tweet,
+    .instagram-media {
+        margin: .5rem;
+    }
+
     .instagram-media {
         margin-top: 1.65rem !important;
+       min-height: 46.5rem;
     }
 
     .twitter-tweet {
@@ -446,8 +459,15 @@ footer {
         margin-top: 1rem;
     }
 
+    .fb-post,
+    .twitter-tweet,
+    .instagram-media {
+        margin: .5rem;
+    }
+
     .instagram-media {
         margin-top: 1.65rem !important;
+        min-height: 47rem;
     }
 
     .twitter-tweet {
@@ -460,8 +480,65 @@ footer {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1390px) {
+@media (max-width: 1706px) {
+    .instagram-media {
+        min-height: 46.5rem;
+    }
+}
 
+@media (max-width: 540px) {
+    .instagram-media {
+        min-height: 46.5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .instagram-media {
+        min-height: 39.5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .instagram-media {
+        min-height: 38.5rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .instagram-media {
+        min-height: 38.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .instagram-media {
+        min-height: 37rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .instagram-media {
+        min-height: 36.15rem;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .instagram-media {
+        min-height: 35.25rem;
+    }
+
+}
+
+@media (max-width: 344px) {
+    .instagram-media {
+        min-height: 34.25rem;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1390px) {
+    
     #redes-widgets {
         flex-direction: column;
         align-items: center;
@@ -475,11 +552,12 @@ footer {
     .fb-post,
     .twitter-tweet,
     .instagram-media {
-        margin: 0rem;
+        margin: .5rem;
     }
 
     .instagram-media {
         margin-top: 1.65rem !important;
+        min-height: 46.5rem;
     }
 
     .twitter-tweet {

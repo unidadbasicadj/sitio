@@ -10,7 +10,7 @@ function marginDistance(side, imgElement) {
   }
   return 0;
 }
-
+/*
 // **** Función que actualiza la opacidad de cada imagen en base a la distancia de la foto con cada costado de la pantalla ****
 function updateOpacity() {
   // Selecciona todas las imágenes con los IDs fotito-1, fotito-2, fotito-3, fotito-4
@@ -46,7 +46,7 @@ function updateOpacity() {
 
 // Comienza el bucle para actualizar la opacidad de las imágenes del slide
 requestAnimationFrame(updateOpacity);
-
+*/
 // **** Función para recargar la página una sola vez por sesión para evitar el error de carga del widget de Instagram en el host ****
 // Chequea si ya fue recargada
 if (!sessionStorage.getItem('reloaded')) {
@@ -110,4 +110,19 @@ document.querySelectorAll('.instagram-media').forEach(function (post) {
 document.querySelectorAll('.twitter-tweet').forEach(function (post) {
   post.addEventListener('click', openX);
 });
+*/
+/*
+// Attempt to fetch from a bad Instagram endpoint (incorrect URL)
+function triggerError() {
+  fetch('https://graph.instagram.com/logging_client_events_invalid', { method: 'POST' })
+    .then(response => {
+      console.log('Request was successful:', response);
+    })
+    .catch(error => {
+      console.error('Error occurred:', error); // This will log the connection refusal error
+    });
+}
+
+// Call the function when the page loads
+window.onload = triggerError;
 */
