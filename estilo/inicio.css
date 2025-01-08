@@ -266,20 +266,25 @@ a {
 .fb-post,
 .twitter-tweet,
 .instagram-media {
-    margin: 1rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
 }
 
 .fb-post {
     margin-top: .6rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .instagram-media {
-    margin-top: .65rem !important;
+    margin-top: .7rem !important;
 }
 
 .twitter-tweet {
     margin-right: 2rem;
+    margin-left: 2rem;
 }
+
 
 #mapa-frame {
     filter: drop-shadow(0 0 .30rem rgba(25, 25, 25, 1));
@@ -382,21 +387,6 @@ footer {
     filter: drop-shadow(0 0 .35rem rgba(25, 25, 25, .65));
 }
 
-@media (max-width: 648px) {
-    .redes-sociales {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #banderas img {
-        margin: .5rem;
-    }
-
-    #mapa-frame {
-        margin-top: 1rem;
-    }
-}
-
 @media (max-width: 768px) {
 
     header,
@@ -415,17 +405,6 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .fb-post,
-    .twitter-tweet,
-    .instagram-media {
-        margin: 0rem;
-    }
-
-   .instagram-media {
-        margin: 1rem;
-        margin-top: 1.25rem !important;
-    }
-
     .correo-e {
         font-size: 8.5vw;
     }
@@ -436,6 +415,48 @@ footer {
 
     #mapa-frame {
         margin-top: 1rem;
+    }
+
+    .instagram-media {
+        margin-top: 1.65rem !important;
+    }
+
+    .twitter-tweet {
+        margin-top: 1.65rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .fb-post {
+        margin-bottom: 0 !important;
+    }
+
+}
+
+@media (max-width: 648px) {
+    .redes-sociales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #banderas img {
+        margin: .5rem;
+    }
+
+    #mapa-frame {
+        margin-top: 1rem;
+    }
+
+    .instagram-media {
+        margin-top: 1.65rem !important;
+    }
+
+    .twitter-tweet {
+        margin-top: 1.65rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .fb-post {
+        margin-bottom: 0 !important;
     }
 }
 
@@ -457,9 +478,17 @@ footer {
         margin: 0rem;
     }
 
-    .twitter-tweet .instagram-media {
-        margin: 1rem;
-        margin-top: 1.25rem !important;
+    .instagram-media {
+        margin-top: 1.65rem !important;
+    }
+
+    .twitter-tweet {
+        margin-top: 1.65rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .fb-post {
+        margin-bottom: 0 !important;
     }
 
     .correo-e {
