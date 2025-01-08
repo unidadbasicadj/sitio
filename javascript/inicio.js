@@ -10,7 +10,7 @@ function marginDistance(side, imgElement) {
   }
   return 0;
 }
-/*
+
 // **** Función que actualiza la opacidad de cada imagen en base a la distancia de la foto con cada costado de la pantalla ****
 function updateOpacity() {
   // Selecciona todas las imágenes con los IDs fotito-1, fotito-2, fotito-3, fotito-4
@@ -46,7 +46,8 @@ function updateOpacity() {
 
 // Comienza el bucle para actualizar la opacidad de las imágenes del slide
 requestAnimationFrame(updateOpacity);
-*/
+
+/*
 // **** Función para recargar la página una sola vez por sesión para evitar el error de carga del widget de Instagram en el host ****
 // Chequea si ya fue recargada
 if (!sessionStorage.getItem('reloaded')) {
@@ -58,6 +59,7 @@ if (!sessionStorage.getItem('reloaded')) {
     location.reload();
   }, 2000);
 }
+*/
 
 // **** Función para verificar si abre la aplicación en el celu de facebook ****
 function openFacebook() {
