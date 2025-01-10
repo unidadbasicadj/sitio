@@ -111,3 +111,4 @@ document.querySelectorAll('.instagram-media').forEach(function (post) {
 document.querySelectorAll('.twitter-tweet').forEach(function (post) {
   post.addEventListener('click', openX);
 });
+
