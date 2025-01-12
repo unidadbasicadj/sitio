@@ -15,7 +15,7 @@ function marginDistance(side, imgElement) {
 function updateOpacity() {
   // Selecciona todas las imágenes con los IDs fotito-1, fotito-2, fotito-3, fotito-4
   const images = document.querySelectorAll('[id^="fotito-"]'); // Selecciona todos los elementos que empiecen con "fotito-"
-
+  /*const images = document.querySelectorAll('.active'); // Selects all elements with the class "active"*/
   // Itera sobre cada imagen para actualizar su opacidad
   images.forEach(imgElement => {
     // Verifica la distancia de cada imagen desde el costado izquierdo y derecho
