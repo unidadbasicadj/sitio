@@ -88,6 +88,7 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 1.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -120,6 +121,14 @@ header {
     margin: .5rem;
     padding: 1.5rem;
     /*margin-bottom: 3.5rem;*/
+}
+
+.banner-imagen {
+    /*width: 68.5rem; */
+    margin-top: 1.65rem;
+    width: 45rem;
+    max-width: 90vw;
+    filter: drop-shadow(0 0 .15rem rgba(25, 25, 25, .65));
 }
 
 .redes-sociales {
@@ -384,6 +393,7 @@ footer {
 .pie {
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 1.65rem;
 }
 
 #banderas img {
