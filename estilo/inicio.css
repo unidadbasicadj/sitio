@@ -367,6 +367,7 @@ footer {
 .carousel-control-prev-icon {
     filter: invert(1);
     transform: scale(2);
+    transition: transform .1s;
 }
 
 .carousel-control-next-icon:hover,
