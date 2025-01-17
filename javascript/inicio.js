@@ -112,3 +112,7 @@ document.querySelectorAll('.twitter-tweet').forEach(function (post) {
   post.addEventListener('click', openX);
 });
 
+// Recarga la página cada que se cambia la resolución
+window.addEventListener('resize', function () {
+  location.reload();
+});
