@@ -126,31 +126,46 @@ header {
 }
 
 .banner {
+    display: flex;
     margin-top: 1.65rem;
     padding: 0;
     max-height: fit-content;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
 }
 
 .banner-imagen {
     /*width: 68.5rem; */
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    width: 45rem;
-    max-width: 90vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 47rem;
+    max-width: 98vw;
     filter: drop-shadow(0 0 .15rem rgba(25, 25, 25, .65));
 }
 
+/*
+div.stencil {
+    margin-top: 1.65rem;
+    margin-bottom: 0;
+    padding: 0;
+    max-height: content;
+}
+*/
+
 .peron-imagen,
 .evita-imagen {
-    margin-right: 0rem;
-    margin-left: 0rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    align-content: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     padding: 0;
-    transform: scale(.75);
-    filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 1));
     max-width: 35vw;
+    width: 15rem;
     opacity: 0.95;
+    /*max-height: fit-content;*/
+    /*filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 1));*/
 }
 
 .redes-sociales {
@@ -484,9 +499,14 @@ footer {
         margin-bottom: 0 !important;
     }
 
+    .banner {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 648px) {
+
     .redes-sociales {
         flex-direction: column;
         align-items: center;
@@ -519,6 +539,11 @@ footer {
     .fb-post {
         margin-bottom: 0 !important;
     }
+
+    .banner {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 1706px) {
@@ -578,7 +603,6 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1390px) {
-
     #redes-widgets {
         flex-direction: column;
         align-items: center;
@@ -613,4 +637,10 @@ footer {
         font-size: 6vw;
     }
 
+}
+
+@media (max-width: 1230px) {
+    .banner {
+        flex-direction: column;
+    }
 }
