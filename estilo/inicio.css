@@ -92,6 +92,7 @@ header {
     margin-top: 1.5rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    max-height: fit-content;
 }
 
 .encabezado-general img {
@@ -99,6 +100,7 @@ header {
     justify-content: center;
     text-align: center;
     align-items: center;
+
 }
 
 .encabezado-general {
@@ -106,7 +108,7 @@ header {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 1rem;
+    margin: 0;
 }
 
 .logo-escudo {
@@ -123,12 +125,32 @@ header {
     /*margin-bottom: 3.5rem;*/
 }
 
+.banner {
+    margin-top: 1.65rem;
+    padding: 0;
+    max-height: fit-content;
+}
+
 .banner-imagen {
     /*width: 68.5rem; */
-    margin-top: 1.65rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     width: 45rem;
     max-width: 90vw;
     filter: drop-shadow(0 0 .15rem rgba(25, 25, 25, .65));
+}
+
+.peron-imagen,
+.evita-imagen {
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0;
+    transform: scale(.75);
+    filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 1));
+    max-width: 35vw;
+    opacity: 0.95;
 }
 
 .redes-sociales {
@@ -385,6 +407,14 @@ footer {
 
 .carousel-inner {
     text-align: center;
+}
+
+#photo-slide .stencils {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: baseline;
+
 }
 
 .d-block {
