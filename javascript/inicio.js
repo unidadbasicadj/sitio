@@ -47,20 +47,6 @@ function updateOpacity() {
 // Comienza el bucle para actualizar la opacidad de las imágenes del slide
 requestAnimationFrame(updateOpacity);
 
-/*
-// **** Función para recargar la página una sola vez por sesión para evitar el error de carga del widget de Instagram en el host ****
-// Chequea si ya fue recargada
-if (!sessionStorage.getItem('reloaded')) {
-  // Esteblece el temporizador de la recarga
-  setTimeout(function () {
-    // Establece el valor bandera en el almacenamiento de sesión para evitar que recargue otra vez en la misma sesión
-    sessionStorage.setItem('reloaded', 'true');
-    // Recarga la página
-    location.reload();
-  }, 2000);
-}
-*/
-
 // **** Función para verificar si abre la aplicación en el celu de facebook ****
 function openFacebook() {
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -97,7 +83,6 @@ function openX() {
   }
 }
 
-
 // Detecta si clickea en el widget de Facebook
 document.querySelectorAll('.fb-post').forEach(function (post) {
   post.addEventListener('click', openFacebook);
@@ -129,24 +114,22 @@ images.forEach(image => {
     modalImage.src = image.src;   // Establece la imagen de la bandera/escudo clickeado
     captionText.innerHTML = image.alt; // Toma el rótulo de texto
     if (image.alt.includes("Evita") || image.alt.includes("Perón")) {
-      /*modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(255, 255, 255, 1)'; // Aplica el filtro de sombra*/
+      modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(255, 255, 255, 1)';
       modal.style.backgroundColor = ' rgba(255, 255, 255, 0.8)';
       captionText.style.color = 'rgba(0, 0, 0, 0.8)';
-      closeModal.style.color = 'rgba(0, 0, 0, 0.8)'; 
-      //closeModal.style.borderColor = 'rgba(0, 0, 0, 0.8)'; 
-
+      closeModal.style.color = 'rgba(0, 0, 0, 0.8)';
     } else {
+      modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(0, 0, 0, 1)';
       modal.style.backgroundColor = ' rgba(0, 0, 0, 0.9)';
       captionText.style.color = 'rgba(255, 255, 255, 0.8)';
-      closeModal.style.color = 'rgba(255, 255, 255, 0.8)'; 
-      //closeModal.style.borderColor = 'rgba(255, 255, 255, 0.8)'; 
+      closeModal.style.color = 'rgba(255, 255, 255, 0.8)';
     }
   });
 });
 
 // Cierra la ventana modal cuando el botón es clickeado 
 closeModal.addEventListener('click', () => {
-  modal.style.display = 'none';  // Hide the modal
+  modal.style.display = 'none';  // Esconde el modal
 });
 
 // Cierra la ventana modal si se clickea fuera de la imagen
