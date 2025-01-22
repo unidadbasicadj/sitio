@@ -97,6 +97,7 @@ function openX() {
   }
 }
 
+
 // Detecta si clickea en el widget de Facebook
 document.querySelectorAll('.fb-post').forEach(function (post) {
   post.addEventListener('click', openFacebook);
@@ -110,4 +111,47 @@ document.querySelectorAll('.instagram-media').forEach(function (post) {
 // Detecta si clickea en el widget de X/Twitter
 document.querySelectorAll('.twitter-tweet').forEach(function (post) {
   post.addEventListener('click', openX);
+});
+
+// Obtiene el elemento modal y le asigna la imagen y lo mismo con el rótulo de texto
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modal-image');
+const captionText = document.getElementById('caption');
+const closeModal = document.getElementById('close-modal');
+
+// Obtiene todas las imágenes de que si debe mostrar en modal
+const images = document.querySelectorAll('#banderas img, .carousel-item img, .banner img, .encabezado-general .logo-escudo');
+
+// Agrega el listener para detectar cuado clickea
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    modal.style.display = 'flex';  // Muestra el modal
+    modalImage.src = image.src;   // Establece la imagen de la bandera/escudo clickeado
+    captionText.innerHTML = image.alt; // Toma el rótulo de texto
+    if (image.alt.includes("Evita") || image.alt.includes("Perón")) {
+      /*modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(255, 255, 255, 1)'; // Aplica el filtro de sombra*/
+      modal.style.backgroundColor = ' rgba(255, 255, 255, 0.8)';
+      captionText.style.color = 'rgba(0, 0, 0, 0.8)';
+      closeModal.style.color = 'rgba(0, 0, 0, 0.8)'; 
+      //closeModal.style.borderColor = 'rgba(0, 0, 0, 0.8)'; 
+
+    } else {
+      modal.style.backgroundColor = ' rgba(0, 0, 0, 0.9)';
+      captionText.style.color = 'rgba(255, 255, 255, 0.8)';
+      closeModal.style.color = 'rgba(255, 255, 255, 0.8)'; 
+      //closeModal.style.borderColor = 'rgba(255, 255, 255, 0.8)'; 
+    }
+  });
+});
+
+// Cierra la ventana modal cuando el botón es clickeado 
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';  // Hide the modal
+});
+
+// Cierra la ventana modal si se clickea fuera de la imagen
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';  // Escondel modal
+  }
 });
