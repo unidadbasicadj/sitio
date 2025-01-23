@@ -1,86 +1,87 @@
 // **** Función que calcula la distancia de la imagen desde el costado indicado ("left" o "right") ****
 function marginDistance(side, imgElement) {
-  const rect = imgElement.getBoundingClientRect();
 
-  // Chequea qué margen está calculando ("left" o "right")
+  const rect = imgElement.getBoundingClientRect();
   if (side === 'left') {
     return rect.left; // Distancia del costado izquierdo ("left")
   } else if (side === 'right') {
     return window.innerWidth - rect.right; // Distancia del costado derecho ("right")
   }
+
   return 0;
+
 }
 
 // **** Función que actualiza la opacidad de cada imagen en base a la distancia de la foto con cada costado de la pantalla ****
 function updateOpacity() {
-  // Selecciona todas las imágenes con los IDs fotito-1, fotito-2, fotito-3, fotito-4
+
   const images = document.querySelectorAll('[id^="fotito-"]'); // Selecciona todos los elementos que empiecen con "fotito-"
-  /*const images = document.querySelectorAll('.active'); // Selects all elements with the class "active"*/
-  // Itera sobre cada imagen para actualizar su opacidad
+
   images.forEach(imgElement => {
-    // Verifica la distancia de cada imagen desde el costado izquierdo y derecho
+
     const distanceLeft = marginDistance('left', imgElement);
     const distanceRight = marginDistance('right', imgElement);
-
-    // Calcula la unidad de opacidad basado en el ancho de la pantalla
     const maxDistance = window.innerWidth; // Máxima distancia posible (ancho de la vista)
-
     let opacityValue;
 
-    // Decide la opacidad en base a la distancia más corta (izquierda o derecha)
     if (distanceLeft < distanceRight) {
-      // Imagen más cercana a la izquierda
       opacityValue = Math.max(0, Math.min(1, distanceLeft / maxDistance * 6));
     } else {
-      // Imagen más cercana a la derecha
       opacityValue = Math.max(0, Math.min(1, distanceRight / maxDistance * 6));
     }
-
-    // Aplica la opacidad calculada a la imagen
+   
     imgElement.style.opacity = opacityValue;
+  
   });
 
-  // Llama a la función en cada frame
   requestAnimationFrame(updateOpacity);
 }
 
-// Comienza el bucle para actualizar la opacidad de las imágenes del slide
 requestAnimationFrame(updateOpacity);
 
 // **** Función para verificar si abre la aplicación en el celu de facebook ****
 function openFacebook() {
+ 
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+ 
   if (/android/i.test(userAgent)) {
-    window.location.href = "fb://page/unidadbasicadj"; // Aplicación de facebook
+    window.location.href = "fb://page/unidadbasicadj"; 
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.location.href = "fb://profile/unidadbasicadj"; // Aplicación de facebook
+    window.location.href = "fb://profile/unidadbasicadj"; 
   } else {
-    window.open("https://www.facebook.com/unidadbasicadj", "_blank"); // Navegador
+    window.open("https://www.facebook.com/unidadbasicadj", "_blank"); 
   }
+
 }
 
 // **** Función para verificar si abre la aplicación en el celu de Instagram ****
 function openInstagram() {
+ 
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+ 
   if (/android/i.test(userAgent)) {
-    window.location.href = "instagram://user?username=unidadbasicadj"; // Aplicación de Instagram
+    window.location.href = "instagram://user?username=unidadbasicadj"; 
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.location.href = "instagram://user?username=unidadbasicadj"; // Aplicación de Instagram
+    window.location.href = "instagram://user?username=unidadbasicadj";
   } else {
-    window.open("https://www.instagram.com/unidadbasicadj", "_blank"); // Navegador
+    window.open("https://www.instagram.com/unidadbasicadj", "_blank"); 
   }
+
 }
 
 // **** Función para verificar si abre la aplicación en el celu de Twitter ****
 function openX() {
+  
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
   if (/android/i.test(userAgent)) {
-    window.location.href = "twitter://user?screen_name=unidadbasicadj"; // Aplicación de X
+    window.location.href = "twitter://user?screen_name=unidadbasicadj"; 
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.location.href = "twitter://user?screen_name=unidadbasicadj"; // Aplicación de X
+    window.location.href = "twitter://user?screen_name=unidadbasicadj"; 
   } else {
-    window.open("https://www.x.com/unidadbasicadj", "_blank"); // Navegador
+    window.open("https://www.x.com/unidadbasicadj", "_blank");
   }
+
 }
 
 // Detecta si clickea en el widget de Facebook
@@ -109,10 +110,13 @@ const images = document.querySelectorAll('#banderas img, .carousel-item img, .ba
 
 // Agrega el listener para detectar cuado clickea
 images.forEach(image => {
+  
   image.addEventListener('click', () => {
-    modal.style.display = 'flex';  // Muestra el modal
-    modalImage.src = image.src;   // Establece la imagen de la bandera/escudo clickeado
-    captionText.innerHTML = image.alt; // Toma el rótulo de texto
+   
+    modal.style.display = 'flex'; 
+    modalImage.src = image.src;  
+    captionText.innerHTML = image.alt; 
+  
     if (image.alt.includes("Evita") || image.alt.includes("Perón")) {
       modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(255, 255, 255, 1)';
       modal.style.backgroundColor = ' rgba(255, 255, 255, 0.8)';
@@ -124,17 +128,22 @@ images.forEach(image => {
       captionText.style.color = 'rgba(255, 255, 255, 0.8)';
       closeModal.style.color = 'rgba(255, 255, 255, 0.8)';
     }
+
   });
+
 });
 
 // Cierra la ventana modal cuando el botón es clickeado 
 closeModal.addEventListener('click', () => {
-  modal.style.display = 'none';  // Esconde el modal
+  
+  modal.style.display = 'none';  
+
 });
 
 // Cierra la ventana modal si se clickea fuera de la imagen
 window.addEventListener('click', (event) => {
+  
   if (event.target === modal) {
-    modal.style.display = 'none';  // Escondel modal
-  }
+    modal.style.display = 'none';  
+
 });

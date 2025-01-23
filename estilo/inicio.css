@@ -23,19 +23,16 @@
     0% {
         filter: drop-shadow(0 0 10px rgba(0, 124, 182, 0));
         text-shadow: 0 0 20px rgba(0, 124, 182, 0);
-        /*color: rgba(33, 37, 41, 1);*/
     }
 
     50% {
         filter: drop-shadow(0 0 10px rgba(0, 124, 182, 1));
         text-shadow: 0 0 20px rgba(0, 124, 182, 1);
-        /*color: rgba(0, 61, 89, 1);*/
     }
 
     100% {
         filter: drop-shadow(0 0 10px rgba(0, 124, 182, 0));
         text-shadow: 0 0 20px rgba(0, 124, 182, 0);
-        /*color: rgba(33, 37, 41, 1);*/
     }
 
 }
@@ -53,6 +50,7 @@
     100% {
         transform: scale(1);
     }
+
 }
 
 @keyframes cicloRebote {
@@ -67,12 +65,10 @@
 
     40% {
         transform: translateY(-10px);
-        /* Va hacia arriba */
     }
 
     60% {
         transform: translateY(-5px);
-        /* Va apenas hacia abajo */
     }
 
 }
@@ -100,7 +96,6 @@ header {
     justify-content: center;
     text-align: center;
     align-items: center;
-
 }
 
 .encabezado-general {
@@ -122,7 +117,6 @@ header {
     border: .15rem outset rgba(25, 25, 25, .85);
     margin: .5rem;
     padding: 1.5rem;
-    /*margin-bottom: 3.5rem;*/
 }
 
 .banner {
@@ -132,26 +126,15 @@ header {
     max-height: fit-content;
     justify-content: center;
     align-items: center;
-    /*height: 100vh;*/
 }
 
 .banner-imagen {
-    /*width: 68.5rem; */
     margin-top: 0;
     margin-bottom: 0;
     width: 47rem;
     max-width: 98vw;
     filter: drop-shadow(0 0 .15rem rgba(25, 25, 25, .65));
 }
-
-/*
-div.stencil {
-    margin-top: 1.65rem;
-    margin-bottom: 0;
-    padding: 0;
-    max-height: content;
-}
-*/
 
 .peron-imagen,
 .evita-imagen {
@@ -164,7 +147,6 @@ div.stencil {
     max-width: 35vw;
     width: 15rem;
     opacity: 0.95;
-    /*max-height: fit-content;*/
     filter: drop-shadow(0 0 5rem rgba(255, 255, 255, 1));
 }
 
@@ -220,15 +202,6 @@ div.stencil {
     margin-top: 0rem;
     font-size: 3vw;
 }
-
-/*
-.correo-e {
-    display: inline-block;
-    word-wrap: break-word;
-    animation: cicloDeEscala 500ms infinite;
-    text-wrap-mode: wrap;
-}
-*/
 
 .correo-e {
     display: inline-block;
@@ -289,20 +262,6 @@ a {
     margin-bottom: 6rem;
 }
 
-/*
-#x-page {
-    width: 21rem;
-}
-
-.fb-page,
-#x-page {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 3rem;
-
-
-*/
-
 .fb-post {
     background-color: rgba(255, 255, 255, 1);
     max-width: fit-content;
@@ -328,13 +287,6 @@ a {
     min-height: 46.5rem;
 }
 
-/*
-.twitter-tweet {
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
-*/
-
 #mapa-frame {
     filter: drop-shadow(0 0 .30rem rgba(25, 25, 25, 1));
     margin-top: 0;
@@ -343,15 +295,6 @@ a {
 #mapa-frame:hover {
     animation: cicloDeSombra 1s infinite;
 }
-
-/*
-iframe {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: flex-start;
-}
-*/
 
 footer {
     font-family: "Gotham Book";
@@ -364,11 +307,6 @@ footer {
     margin-top: 6rem;
     line-height: 1.1;
 }
-
-/* 
-#photo-slide {
-    max-width: 90vw;
-}*/
 
 #photo-slide {
     margin-top: 6rem;
@@ -383,13 +321,6 @@ footer {
 
 .carousel-control-prev,
 .carousel-control-next {
-    /*
-    position: absolute;
-    top: 50%;
-    
-    z-index: 5;
-    width: 5%;
-    */
     margin: -1rem;
     font-size: 135%;
     font-family: "Gotham Ultra";
@@ -425,7 +356,6 @@ footer {
     justify-content: space-between;
     position: relative;
     align-items: baseline;
-
 }
 
 .d-block {
@@ -490,22 +420,6 @@ footer {
     padding: 0;
 }
 
-/*
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-*/
-
-
 .close {
     display: flex;
     text-align: center;
@@ -526,12 +440,6 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-
-/*
-.close {
-    display: none;
-}
-*/
 
 #caption {
     margin-top: 1rem;
@@ -641,42 +549,55 @@ footer {
 }
 
 @media (max-width: 1706px) {
+
     .instagram-media {
         min-height: 46.5rem;
     }
+
 }
 
 @media (max-width: 540px) {
+
     .instagram-media {
         min-height: 46.5rem;
     }
+
 }
 
 @media (max-width: 430px) {
+
     .instagram-media {
         min-height: 39.5rem;
     }
+
 }
 
 @media (max-width: 414px) {
+
     .instagram-media {
         min-height: 38.5rem;
     }
+
 }
 
 @media (max-width: 412px) {
+
     .instagram-media {
         min-height: 38.5rem;
     }
+
 }
 
 @media (max-width: 390px) {
+
     .instagram-media {
         min-height: 37rem;
     }
+
 }
 
 @media (max-width: 375px) {
+
     .instagram-media {
         min-height: 36.15rem;
     }
@@ -684,6 +605,7 @@ footer {
 }
 
 @media (max-width: 360px) {
+
     .instagram-media {
         min-height: 35.25rem;
     }
@@ -691,12 +613,15 @@ footer {
 }
 
 @media (max-width: 344px) {
+
     .instagram-media {
         min-height: 34.25rem;
     }
+
 }
 
 @media (min-width: 769px) and (max-width: 1390px) {
+
     #redes-widgets {
         flex-direction: column;
         align-items: center;
@@ -734,7 +659,9 @@ footer {
 }
 
 @media (max-width: 1230px) {
+
     .banner {
         flex-direction: column;
     }
+
 }
