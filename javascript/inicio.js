@@ -29,9 +29,9 @@ function updateOpacity() {
     } else {
       opacityValue = Math.max(0, Math.min(1, distanceRight / maxDistance * 6));
     }
-   
+
     imgElement.style.opacity = opacityValue;
-  
+
   });
 
   requestAnimationFrame(updateOpacity);
@@ -40,44 +40,47 @@ function updateOpacity() {
 requestAnimationFrame(updateOpacity);
 
 // **** Función para verificar si abre la aplicación en el celu de facebook ****
-function openFacebook() {
- 
+function openFacebook(event) {
+
+  event.preventDefault();
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
- 
+
   if (/android/i.test(userAgent)) {
-    window.location.href = "fb://page/unidadbasicadj"; 
+    window.location.href = "fb://page/unidadbasicadj";
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.location.href = "fb://profile/unidadbasicadj"; 
+    window.location.href = "fb://profile/unidadbasicadj";
   } else {
-    window.open("https://www.facebook.com/unidadbasicadj", "_blank"); 
+    window.open("https://www.facebook.com/unidadbasicadj", "_blank");
   }
 
 }
 
 // **** Función para verificar si abre la aplicación en el celu de Instagram ****
-function openInstagram() {
- 
+function openInstagram(event) {
+
+  event.preventDefault();
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
- 
+
   if (/android/i.test(userAgent)) {
-    window.location.href = "instagram://user?username=unidadbasicadj"; 
+    window.location.href = "instagram://user?username=unidadbasicadj";
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
     window.location.href = "instagram://user?username=unidadbasicadj";
   } else {
-    window.open("https://www.instagram.com/unidadbasicadj", "_blank"); 
+    window.open("https://www.instagram.com/unidadbasicadj", "_blank");
   }
 
 }
 
 // **** Función para verificar si abre la aplicación en el celu de Twitter ****
-function openX() {
-  
+function openX(event) {
+
+  event.preventDefault();
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  
+
   if (/android/i.test(userAgent)) {
-    window.location.href = "twitter://user?screen_name=unidadbasicadj"; 
+    window.location.href = "twitter://user?screen_name=unidadbasicadj";
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.location.href = "twitter://user?screen_name=unidadbasicadj"; 
+    window.location.href = "twitter://user?screen_name=unidadbasicadj";
   } else {
     window.open("https://www.x.com/unidadbasicadj", "_blank");
   }
@@ -110,13 +113,13 @@ const images = document.querySelectorAll('#banderas img, .carousel-item img, .ba
 
 // Agrega el listener para detectar cuado clickea
 images.forEach(image => {
-  
+
   image.addEventListener('click', () => {
-   
-    modal.style.display = 'flex'; 
-    modalImage.src = image.src;  
-    captionText.innerHTML = image.alt; 
-  
+
+    modal.style.display = 'flex';
+    modalImage.src = image.src;
+    captionText.innerHTML = image.alt;
+
     if (image.alt.includes("Evita") || image.alt.includes("Perón")) {
       modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(255, 255, 255, 1)';
       modal.style.backgroundColor = ' rgba(255, 255, 255, 0.8)';
@@ -135,16 +138,16 @@ images.forEach(image => {
 
 // Cierra la ventana modal cuando el botón es clickeado 
 closeModal.addEventListener('click', () => {
-  
-  modal.style.display = 'none';  
+
+  modal.style.display = 'none';
 
 });
 
 // Cierra la ventana modal si se clickea fuera de la imagen
 window.addEventListener('click', (event) => {
-  
+
   if (event.target === modal) {
     modal.style.display = 'none';
-  }   
+  }
 
 });
