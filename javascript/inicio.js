@@ -46,11 +46,11 @@ function openFacebook(event) {
   const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
   if (/android/i.test(userAgent)) {
-    window.location.href = "fb://page/unidadbasicadj";
+    window.location.href = "fb://page/342721982596286";
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    window.location.href = "fb://profile/unidadbasicadj";
+    window.location.href = "fb://profile/342721982596286";
   } else {
-    window.open("https://www.facebook.com/unidadbasicadj", "_blank");
+    window.open("https://www.facebook.com/342721982596286", "_blank");
   }
 
 }
