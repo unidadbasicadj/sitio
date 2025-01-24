@@ -15,13 +15,13 @@ function marginDistance(side, imgElement) {
 // **** Función que actualiza la opacidad de cada imagen en base a la distancia de la foto con cada costado de la pantalla ****
 function updateOpacity() {
 
-  const images = document.querySelectorAll('[id^="fotito-"]'); // Selecciona todos los elementos que empiecen con "fotito-"
+  const images = document.querySelectorAll('[id^="fotito-"]');
 
   images.forEach(imgElement => {
 
     const distanceLeft = marginDistance('left', imgElement);
     const distanceRight = marginDistance('right', imgElement);
-    const maxDistance = window.innerWidth; // Máxima distancia posible (ancho de la vista)
+    const maxDistance = window.innerWidth;
     let opacityValue;
 
     if (distanceLeft < distanceRight) {
@@ -108,7 +108,7 @@ const modalImage = document.getElementById('modal-image');
 const captionText = document.getElementById('caption');
 const closeModal = document.getElementById('close-modal');
 
-// Obtiene todas las imágenes de que si debe mostrar en modal
+// Obtiene las imágenes que debe mostrar en modal en caso de clickear sobre una de ellas
 const images = document.querySelectorAll('#banderas img, .carousel-item img, .banner img, .encabezado-general .logo-escudo');
 
 // Agrega el listener para detectar cuando clickea cada imagen
