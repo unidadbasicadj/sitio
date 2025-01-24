@@ -111,7 +111,7 @@ const closeModal = document.getElementById('close-modal');
 // Obtiene todas las imágenes de que si debe mostrar en modal
 const images = document.querySelectorAll('#banderas img, .carousel-item img, .banner img, .encabezado-general .logo-escudo');
 
-// Agrega el listener para detectar cuado clickea
+// Agrega el listener para detectar cuando clickea
 images.forEach(image => {
 
   image.addEventListener('click', () => {
