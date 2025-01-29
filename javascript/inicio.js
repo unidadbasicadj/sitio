@@ -121,16 +121,17 @@ images.forEach(image => {
     captionText.innerHTML = image.alt;
 
     if (image.alt.includes("Evita") || image.alt.includes("Perón")) {
-      modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(255, 255, 255, 1)';
-      modal.style.backgroundColor = ' rgba(255, 255, 255, 0.8)';
-      captionText.style.color = 'rgba(0, 0, 0, 0.8)';
-      closeModal.style.color = 'rgba(0, 0, 0, 0.8)';
+      modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(0, 103, 146, 1)';
+      modal.style.backgroundColor = 'rgba(0, 93, 136, .9)';
     } else {
-      modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(0, 0, 0, 1)';
-      modal.style.backgroundColor = ' rgba(0, 0, 0, 0.9)';
-      captionText.style.color = 'rgba(255, 255, 255, 0.8)';
-      closeModal.style.color = 'rgba(255, 255, 255, 0.8)';
+      modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(0, 46.5, 68, 1)';
+
+      modal.style.backgroundColor = 'rgba(0, 93, 136, .7)';
     }
+    captionText.style.color = 'rgba(255, 255, 255, 1)';
+    captionText.style.textShadow = '0px 0px 1.5rem rgba(0, 46.5, 68, 1)';
+    closeModal.style.color = 'rgba(255, 255, 255, 1)';
+    closeModal.style.textShadow = '0px 0px 1.5rem rgba(0, 46.5, 68, 1)';
 
   });
 
