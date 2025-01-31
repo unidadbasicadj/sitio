@@ -105,6 +105,7 @@ document.querySelectorAll('.twitter-tweet').forEach(function (post) {
 // Obtiene el elemento modal y le asigna la imagen y lo mismo con el rótulo de texto
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modal-image');
+const modalContent = document.querySelector('.modal-content');
 const captionText = document.getElementById('caption');
 const closeModal = document.getElementById('close-modal');
 
@@ -121,17 +122,23 @@ images.forEach(image => {
     captionText.innerHTML = image.alt;
 
     if (image.alt.includes("Evita") || image.alt.includes("Perón")) {
-      modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(0, 103, 146, 1)';
-      modal.style.backgroundColor = 'rgba(0, 93, 136, .9)';
+      modalContent.style.borderColor = 'rgba(0, 103, 146, 1)';
+      modalContent.style.border = 'solid 0.5rem';
+      modalContent.style.borderRadius = '2rem';
+      modalContent.style.padding = '3rem';
+      modalContent.style.backgroundColor = 'rgba(255, 255, 255, 1)';
     } else {
-      modalImage.style.filter = 'drop-shadow(0px 0px 1rem rgba(0, 46.5, 68, 1)';
-
-      modal.style.backgroundColor = 'rgba(0, 93, 136, .7)';
+      modalContent.style.border = 'none';
+      modalContent.style.borderRadius = '0';
+      modalContent.style.padding = '0';
+      modalContent.style.backgroundColor = 'rgba(255, 255, 255, 0)';
     }
+
+    modal.style.backgroundColor = 'rgba(0, 0, 0, .7)';
     captionText.style.color = 'rgba(255, 255, 255, 1)';
-    captionText.style.textShadow = '0px 0px 1.5rem rgba(0, 46.5, 68, 1)';
+    captionText.style.textShadow = '0px 0px 1.5rem rgba(0, 0, 0, 1)';
     closeModal.style.color = 'rgba(255, 255, 255, 1)';
-    closeModal.style.textShadow = '0px 0px 1.5rem rgba(0, 46.5, 68, 1)';
+    closeModal.style.textShadow = '0px 0px 1.5rem rgba(0, 0, 0, 1)';
 
   });
 
