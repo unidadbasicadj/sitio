@@ -121,6 +121,10 @@ images.forEach(image => {
     modalImage.src = image.src;
     captionText.innerHTML = image.alt;
 
+    // Aplica estilos al texto debajo de cada imagen
+    captionText.style.maxWidth = '99vw';
+    captionText.style.textAlign = 'center';
+
     if (image.alt.includes("Evita") || image.alt.includes("Perón")) {
       modalContent.style.borderColor = 'rgba(0, 103, 146, 1)';
       modalContent.style.border = 'solid 0.5rem';
