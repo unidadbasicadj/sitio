@@ -122,7 +122,7 @@ images.forEach(image => {
     captionText.innerHTML = image.alt;
 
     // Aplica estilos al texto debajo de cada imagen
-    captionText.style.maxWidth = '99vw';
+    captionText.style.maxWidth = '99vivw';
     captionText.style.textAlign = 'center';
 
     if (image.alt.includes("Evita") || image.alt.includes("Perón")) {
